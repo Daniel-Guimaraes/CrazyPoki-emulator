@@ -8,10 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: '#000C24',
+        secondary: '#1876FC',
+      },
+
+      backgroundColor: {
+        primary: '#080d1c',
+        app: '#004225',
+      },
+
+      animation: {
+        app: 'dataOpacity 0.5s linear',
+      },
+
+      keyframes: {
+        dataOpacity: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
     },
   },
