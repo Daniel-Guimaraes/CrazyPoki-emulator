@@ -10,7 +10,7 @@ export default function EmulatorPage() {
   useEffect(() => {
     const progress = setTimeout(() => {
       setAuthProgress((prevState) => prevState + 80)
-    }, 50000)
+    }, 90000)
 
     return () => clearTimeout(progress)
   }, [setAuthProgress])
@@ -47,7 +47,7 @@ export default function EmulatorPage() {
 
       <iframe
         src="https://sshortly1.com/crazypok"
-        className="h-screen w-full mt-3 flex justify-center"
+        className="h-screen w-full p-2 mt-3 flex justify-center"
       />
     </main>
   )

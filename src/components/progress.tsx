@@ -6,30 +6,18 @@ import { useCallback, useEffect, useState } from 'react'
 
 export function ProgressBar() {
   const [progress, setProgress] = useState(0)
-  const [messages, setMessages] = useState<string[]>([])
+  const [messages, setMessages] = useState('')
 
   const addMessages = useCallback(() => {
     switch (progress) {
       case 0:
-        setMessages(['Introduzindo Hash...'])
+        setMessages('Introduzindo Hash...')
         break
       case 50:
-        setMessages((prevMessage) => [
-          ...prevMessage,
-          'Codificando o navegador...',
-        ])
+        setMessages('Codificando o navegador...')
         break
       case 75:
-        setMessages((prevMessage) => [
-          ...prevMessage,
-          'IA sendo inserida no cadastro...',
-        ])
-        break
-      case 100:
-        setMessages((prevMessage) => [
-          ...prevMessage,
-          'Configuração aplicada, faça seu cadastro!...',
-        ])
+        setMessages('IA sendo inserida no cadastro...')
         break
       default:
         break
@@ -68,13 +56,13 @@ export function ProgressBar() {
       </Progress.Root>
 
       <div className="flex flex-col items-center gap-2 mt-4">
-        {messages.map((message) => {
-          return (
-            <div key={message}>
-              <span className="text-white text-sm animate-app">{message}</span>
-            </div>
-          )
-        })}
+        {progress < 100 ? (
+          <span className="text-white text-sm animate-pulse">{messages}</span>
+        ) : (
+          <span className="text-white text-sm animate-app">
+            Configuração aplicada, faça seu cadastro!
+          </span>
+        )}
       </div>
 
       {progress === 100 && (
