@@ -10,7 +10,7 @@ export default function EmulatorPage() {
   useEffect(() => {
     const progress = setTimeout(() => {
       setAuthProgress((prevState) => prevState + 80)
-    }, 90000)
+    }, 1000)
 
     return () => clearTimeout(progress)
   }, [setAuthProgress])
@@ -37,7 +37,7 @@ export default function EmulatorPage() {
           </p>
         </div>
       ) : (
-        <div>
+        <div className="w-[360px] px-4">
           <Emulator />
           <p className="text-white text-xs mt-2 text-center">
             Ative a inteligência antes de jogar*

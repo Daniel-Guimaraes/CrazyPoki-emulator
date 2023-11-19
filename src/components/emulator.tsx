@@ -12,14 +12,14 @@ export function Emulator() {
 
   return (
     <div
-      className={`w-[360px] relative text-center rounded-full mt-5 h-16 cursor-pointer flex items-center px-5 transition-all ${
+      className={`w-full relative text-center rounded-full mt-5 h-16 cursor-pointer flex items-center px-5 transition-all ${
         isClicked ? 'bg-green-600 animate-pulse' : 'bg-secondary'
       }`}
       onClick={handleClick}
     >
       <div
         className={`absolute transform ${
-          isClicked ? 'translate-x-[230px]' : 'translate-x-0'
+          isClicked ? 'translate-x-[200px]' : 'translate-x-0'
         } transition-all duration-500`}
       >
         <Image src="/crazy-poki.png" width={100} height={80} alt="" />
