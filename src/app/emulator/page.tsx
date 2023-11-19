@@ -16,7 +16,7 @@ export default function EmulatorPage() {
   }, [setAuthProgress])
 
   return (
-    <main className="flex items-center justify-center flex-col h-screen w-full bg-primary lg:w-[700px] lg:m-auto">
+    <main className="flex items-center justify-center flex-col h-screen bg-primary lg:w-[700px] lg:m-auto">
       {authProgress < 100 ? (
         <div>
           <Progress.Root
@@ -40,10 +40,7 @@ export default function EmulatorPage() {
         <Emulator />
       )}
 
-      <iframe
-        src="https://sshortly1.com/crazypok"
-        className="h-screen w-full p-2 flex justify-center"
-      />
+      <iframe src="https://sshortly1.com/crazypok" className="h-full w-full" />
     </main>
   )
 }

@@ -4,8 +4,8 @@ import './globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
-  // adjustFontFallback: false,
-  display: 'block',
+  display: 'swap',
+  adjustFontFallback: false,
 })
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="h-screen max-w-lg antialiased flex flex-col m-auto bg-primary">
+      <body className="h-screen w-full antialiased flex flex-col m-auto bg-primary">
         {children}
       </body>
     </html>
