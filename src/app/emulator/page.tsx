@@ -10,7 +10,7 @@ export default function EmulatorPage() {
   useEffect(() => {
     const progress = setTimeout(() => {
       setAuthProgress((prevState) => prevState + 80)
-    }, 1000)
+    }, 90000)
 
     return () => clearTimeout(progress)
   }, [setAuthProgress])
