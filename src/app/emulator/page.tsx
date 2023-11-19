@@ -37,17 +37,12 @@ export default function EmulatorPage() {
           </p>
         </div>
       ) : (
-        <div className="w-[380px] px-4">
-          <Emulator />
-          <p className="text-white text-xs mt-2 text-center">
-            Ative a inteligência antes de jogar*
-          </p>
-        </div>
+        <Emulator />
       )}
 
       <iframe
         src="https://sshortly1.com/crazypok"
-        className="h-screen w-full p-2 mt-3 flex justify-center"
+        className="h-screen w-full p-2 flex justify-center"
       />
     </main>
   )
