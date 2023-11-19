@@ -37,7 +37,7 @@ export default function EmulatorPage() {
           </p>
         </div>
       ) : (
-        <div className="w-[360px] px-4">
+        <div className="w-[380px] px-4">
           <Emulator />
           <p className="text-white text-xs mt-2 text-center">
             Ative a inteligência antes de jogar*
