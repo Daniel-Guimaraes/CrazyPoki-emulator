@@ -2,6 +2,7 @@
 
 import { Emulator } from '@/components/emulator'
 import * as Progress from '@radix-ui/react-progress'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 export default function EmulatorPage() {
@@ -17,10 +18,18 @@ export default function EmulatorPage() {
 
   return (
     <main className="flex items-center justify-center flex-col h-screen bg-primary lg:w-[700px] lg:m-auto">
+      <Image
+        src="/star.svg"
+        width={40}
+        height={40}
+        alt=""
+        className="m-auto mt-2"
+      />
+
       {authProgress < 100 ? (
         <div>
           <Progress.Root
-            className="relative overflow-hidden bg-white/70 rounded-full w-[300px] h-[8px] animate-app mt-8"
+            className="relative overflow-hidden bg-white/70 rounded-full w-[300px] h-[8px] animate-app mt-2 mb-2"
             style={{
               transform: 'translateZ(0)',
             }}
