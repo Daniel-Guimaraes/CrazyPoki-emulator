@@ -4,12 +4,18 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="p-10 w-full h-screen flex flex-col justify-stretch">
-      <div className="flex flex-col justify-center items-center relative">
-        <Image src="/star.svg" width={80} height={80} alt="" />
-        <Image src="/crazy-poki.png" alt="" width={602} height={465} />
-        <p className="text-xl text-white font-bold absolute bottom-4">
-          IA Hacker Crazy POK
+    <main className="p-5 w-full h-screen flex flex-col justify-stretch">
+      <div className="flex flex-col justify-center items-center">
+        <Image
+          src="/logo-estrelaLab.svg"
+          width={60}
+          height={60}
+          alt=""
+          className="mb-4"
+        />
+        <Image src="/logo-crazy-poki.svg" alt="" width={280} height={166} />
+        <p className="text-xl text-white font-bold bottom-4 mt-3">
+          Inteligência Crazy POKI
         </p>
       </div>
 

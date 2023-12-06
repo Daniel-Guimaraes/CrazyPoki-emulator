@@ -9,7 +9,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Hacker PlayPix',
+  title: 'Inteligência Crazy Poki',
 }
 
 export default function RootLayout({

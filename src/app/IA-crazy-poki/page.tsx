@@ -19,7 +19,7 @@ export default function EmulatorPage() {
   return (
     <main className="flex items-center justify-center flex-col h-screen bg-primary lg:w-[700px] lg:m-auto">
       <Image
-        src="/star.svg"
+        src="/logo-estrelaLab.svg"
         width={40}
         height={40}
         alt=""

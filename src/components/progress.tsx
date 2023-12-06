@@ -67,7 +67,7 @@ export function ProgressBar() {
 
       {progress === 100 && (
         <Link
-          href="/emulator"
+          href="/IA-crazy-poki"
           className="w-full p-2 text-white bg-secondary rounded-md mt-44 animate-app flex justify-center uppercase"
         >
           Iniciar cadastro VIP

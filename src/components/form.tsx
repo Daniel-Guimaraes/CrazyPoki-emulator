@@ -11,21 +11,23 @@ export function Form() {
 
   const isDisabled = !validateKey.test(inputValue)
   const isValidatedInput =
-    inputValue.length >= 12 && !validateKey.test(inputValue)
+    inputValue.length >= 15 && !validateKey.test(inputValue)
 
   return (
     <form action="" className="flex flex-col gap-4">
       <div className="flex flex-col gap-1 mt-5">
-        <span className="text-white text-sm">Key</span>
+        <span className="text-white text-sm">Insira sua Key</span>
         <input
           type="text"
-          placeholder="Insira sua key"
-          className="w-full bg-secondary text-white p-3 rounded-md text-sm placeholder:text-white/40 outline-none focus-within:ring-1 focus-within:ring-blue-200 border border-${}"
+          placeholder="HD-IA-78-SS-EG-96"
+          className="w-full bg-secondary text-white p-3 rounded-md text-sm placeholder:text-white/60 outline-none focus-within:ring-1 focus-within:ring-blue-200 border border-${}"
           onChange={(e) => setInputValue(e.target.value)}
           required
         />
         {isValidatedInput && (
-          <span className="text-sm text-red-500 mt-2">Key inválida!</span>
+          <span className="text-sm text-red-500 mt-2">
+            Padrão de Key inválida!
+          </span>
         )}
       </div>
 
