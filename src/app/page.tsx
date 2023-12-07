@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="p-5 w-full h-screen flex flex-col justify-between">
+    <main className="p-5 w-full h-screen flex flex-col">
       <div className="flex flex-col justify-center items-center">
         <Image
           src="/logo-estrelaLab.svg"
@@ -23,7 +23,7 @@ export default function Home() {
         <Form />
       </div>
 
-      <div className="w-full flex gap-3 flex-col items-center">
+      <div className="w-full flex gap-3 flex-col items-center mt-14">
         <Image src="/support.png" alt="" width={55} height={55} />
         <Link
           href="https://t.me/estrelalab"
