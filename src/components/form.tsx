@@ -14,7 +14,7 @@ export function Form() {
     inputValue.length >= 15 && !validateKey.test(inputValue)
 
   return (
-    <form action="" className="flex flex-col gap-4">
+    <form action="" className="flex flex-col gap-4 w-full">
       <div className="flex flex-col gap-1 mt-5">
         <span className="text-white text-sm">Insira sua Key</span>
         <input

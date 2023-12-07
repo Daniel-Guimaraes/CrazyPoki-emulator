@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="p-5 w-full h-screen flex flex-col justify-around">
+    <main className="p-5 w-full h-screen flex flex-col justify-between">
       <div className="flex flex-col justify-center items-center">
         <Image
           src="/logo-estrelaLab.svg"
@@ -13,13 +13,15 @@ export default function Home() {
           alt=""
           className="mb-4"
         />
+
         <Image src="/logo-crazy-poki.svg" alt="" width={200} height={166} />
+
         <p className="text-xl text-white font-bold bottom-4 mt-3">
           Inteligência Crazy POKI
         </p>
-      </div>
 
-      <Form />
+        <Form />
+      </div>
 
       <div className="w-full flex gap-3 flex-col items-center">
         <Image src="/support.png" alt="" width={55} height={55} />
