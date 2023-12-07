@@ -19,7 +19,7 @@ export function Emulator() {
         onClick={handleClick}
       >
         <Image
-          src="/crazy-poki.png"
+          src="/logo-crazy-poki.svg"
           width={80}
           height={60}
           alt=""
