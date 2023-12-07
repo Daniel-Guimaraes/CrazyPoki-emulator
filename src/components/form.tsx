@@ -19,8 +19,8 @@ export function Form() {
         <span className="text-white text-sm">Insira sua Key</span>
         <input
           type="text"
-          placeholder="HD-IA-78-SS-EG-96"
-          className="w-full bg-secondary text-white p-3 rounded-md text-sm placeholder:text-white/60 outline-none focus-within:ring-1 focus-within:ring-blue-200 border border-${}"
+          placeholder="Insira uma key válida"
+          className="w-full bg-secondary text-white p-2 rounded-md text-sm placeholder:text-white/60 outline-none focus-within:ring-1 focus-within:ring-blue-200 border border-${}"
           onChange={(e) => setInputValue(e.target.value)}
           required
         />
@@ -41,7 +41,7 @@ export function Form() {
 
       <button
         type="button"
-        className="w-full bg-secondary p-2 rounded-md mt-10 text-white hover:bg-secondary/80 font-bold cursor-pointer flex justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full bg-secondary p-3 rounded-md mt-6 text-white text-md uppercase hover:bg-secondary/80 font-bold cursor-pointer flex justify-center disabled:opacity-50 disabled:cursor-not-allowed"
         disabled={isDisabled}
         onClick={() => router.push('/insert-hacker')}
       >
